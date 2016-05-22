@@ -63,6 +63,23 @@ This will allow you to easily switch off some pages in the future if needed.
 
 })();
 ```
+5) The new module need to register in the pages.module.js.
+```javascript
+angular.module('BlurAdmin.pages', [
+    'ui.router',
+
+    'BlurAdmin.pages.dashboard',
+    'BlurAdmin.pages.ui',
+    'BlurAdmin.pages.components',
+    'BlurAdmin.pages.form',
+    'BlurAdmin.pages.tables',
+    'BlurAdmin.pages.charts',
+    'BlurAdmin.pages.maps',
+    'BlurAdmin.pages.profile',
+    'BlurAdmin.pages.myNewPage',
+  ])
+
+```
 
 That's it! Your can now open your new page either from sidebar or through hash URL.
 
